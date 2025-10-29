@@ -22,9 +22,13 @@ terraform {
       source  = "hashicorp/google"
       version = ">= 5.12, < 8"
     }
+    null = {
+      source  = "hashicorp/null"
+      version = "~> 3.2"
+    }
   }
 
   provider_meta "google" {
-    module_name = "blueprints/terraform/terraform-google-cloud-router:interface/v7.4.4"
+    module_name = "blueprints/terraform/terraform-google-cloud-router:interface/v7.4.5"
   }
 }
