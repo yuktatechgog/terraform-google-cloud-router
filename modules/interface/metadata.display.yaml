@@ -42,9 +42,9 @@ spec:
         peers:
           name: peers
           title: Peers
-        project_id:
-          name: project_id
-          title: Project_Id
+        project:
+          name: project
+          title: Project
         region:
           name: region
           title: Region

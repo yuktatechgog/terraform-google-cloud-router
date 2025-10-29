@@ -27,7 +27,8 @@ module "vpc" {
 
 # [START cloudrouter_create]
 module "cloud_router" {
-  source = "../.."
+  source  = "terraform-google-modules/cloud-router/google"
+  version = "~> 7.0"
 
   name   = "my-router"
   region = "us-central1"
@@ -38,7 +39,7 @@ module "cloud_router" {
     asn = "65001"
   }
 
-  project_id = var.project_id
-  network    = module.vpc.network_name
+  project = var.project_id
+  network = module.vpc.network_name
 }
 # [END cloudrouter_create]

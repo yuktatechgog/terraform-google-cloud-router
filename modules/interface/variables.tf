@@ -19,7 +19,7 @@ variable "name" {
   description = "The name of the interface"
 }
 
-variable "project_id" {
+variable "project" {
   type        = string
   description = "The project ID to deploy to"
 }

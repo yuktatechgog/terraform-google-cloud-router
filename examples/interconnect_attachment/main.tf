@@ -15,10 +15,11 @@
  */
 
 module "cloud_router" {
-  source = "../.."
+  source  = "terraform-google-modules/cloud-router/google"
+  version = "~> 7.0"
 
   name    = "example-router"
-  project_id = "example-project"
+  project = "example-project"
   network = "default"
   region  = "us-central1"
 
