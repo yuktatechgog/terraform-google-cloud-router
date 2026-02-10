@@ -22,7 +22,7 @@ spec:
   info:
     title: Interface
     source:
-      repo: https://github.com/terraform-google-modules/terraform-google-cloud-router.git
+      repo: https://github.com/yuktatechgog/terraform-google-cloud-router.git
       sourceType: git
       dir: /modules/interface
   ui:
