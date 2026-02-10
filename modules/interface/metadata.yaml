@@ -96,12 +96,12 @@ spec:
               peer_asn                       = string
               advertised_route_priority      = optional(number)
               zero_advertised_route_priority = optional(bool)
-              bfd = object({
-                session_initialization_mode = string
+              bfd = optional(object({
+                session_initialization_mode = optional(string)
                 min_transmit_interval       = optional(number)
                 min_receive_interval        = optional(number)
                 multiplier                  = optional(number)
-              })
+              }))
               md5_authentication_key = optional(object({
                 name = string
                 key  = string
